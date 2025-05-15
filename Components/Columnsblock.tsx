@@ -7,18 +7,18 @@ import { useEffect, useRef, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 
 const columnImagesData = [
-    "./saumya.jpeg",
-    "./img1.jpg",
-    "./img2.jpg",
-    "./img4.jpg",
-    "./img3.jpg",
-    "./img5.jpg",
-    "./img7.jpg",
-    "./img4.jpg",
-    "./img6.jpg",
-    "./saumya.jpeg",
-    "./img4.jpg",
-    "./img5.jpg",
+    "/saumya.jpeg",
+    "/img1.jpg",
+    "/img2.jpg",
+    "/img4.jpg",
+    "/img3.jpg",
+    "/img5.jpg",
+    "/img7.jpg",
+    "/img4.jpg",
+    "/img6.jpg",
+    "/saumya.jpeg",
+    "/img4.jpg",
+    "/img5.jpg",
 ];
 
 export function ColumnsBlock({ className }: { className?: string }) {
@@ -105,7 +105,7 @@ function Column({ images, y, className }: ColumnProps) {
                     className="imageContainer relative h-1/3 w-full rounded-xl xl:h-1/4 sm:h-1/6"
                 >
                     <Image
-                        src={`/images/gallery/columns/${src}`}
+                        src={`${src}`}
                         alt={`image${src}`}
                         fill
                         className="object-cover rounded-xl"
